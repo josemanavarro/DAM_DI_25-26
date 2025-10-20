@@ -1,0 +1,43 @@
+services:
+  db:
+    build:
+      context: ./mysql
+    container_name: mysql-di
+    restart: unless-stopped
+    ports:
+      - "${MYSQL_PORT}:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    volumes:
+      # Datos persistentes
+      - mysql_data:/var/lib/mysql
+    networks:
+      - di_net
+
+  # Opcional, interfaz web para ver la BD
+  adminer:
+    image: adminer:latest
+    container_name: adminer-di
+    restart: unless-stopped
+    ports:
+      - "${ADMINER_PORT}:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - di_net
+
+volumes:
+  mysql_data:
+
+networks:
+  di_net:
+    driver: bridge
