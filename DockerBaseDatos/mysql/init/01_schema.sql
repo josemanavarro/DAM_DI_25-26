@@ -6,15 +6,16 @@ USE `DI`;
 
 -- Tabla usuarios
 -- Añadimos id como PK auto-inc por buenas prácticas.
-CREATE TABLE IF NOT EXISTS `usuarios` (
+CREATE TABLE IF NOT EXISTS `alumnos` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `nombre`     VARCHAR(100)  NOT NULL,
   `apellidos`  VARCHAR(150)  NOT NULL,
+  `ciclo`      VARCHAR(50)   NOT NULL,
   `curso`      VARCHAR(50)   NOT NULL,
   `fecha_alta` DATE          NOT NULL DEFAULT (CURRENT_DATE),
   PRIMARY KEY (`id`),
   KEY `idx_apellidos` (`apellidos`),
-  KEY `idx_curso` (`curso`)
+  KEY `idx_ciclo` (`ciclo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Los grants para el usuario de aplicación (creado por variables de entorno)
