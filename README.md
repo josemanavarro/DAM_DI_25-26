@@ -10,3 +10,5 @@
 **20/10/2025:** Subida de la base de datos del ejemplo. Modificación del DTO y DAO, la clase Logica de Negocio se actualiza.
 
 **21/10/2025:** Actualización de la base de datos, y subida de *ejemploClase4* que incluye la conexión a datos, pero aún no incluye el filtrado ni actualización de datos.
+
+**24/10/2025** Añado un docker-compose para lanzar la base de datos sakila, necesaria para la tarea 1, sin instalar MySQL Workbench
