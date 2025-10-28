@@ -12,3 +12,5 @@
 **21/10/2025:** Actualización de la base de datos, y subida de *ejemploClase4* que incluye la conexión a datos, pero aún no incluye el filtrado ni actualización de datos.
 
 **24/10/2025** Añado un docker-compose para lanzar la base de datos sakila, necesaria para la tarea 1, sin instalar MySQL Workbench
+
+**27/10/2025** Añadido *ejemploClase5* que añade el filtrado, borrado y edición de elementos
