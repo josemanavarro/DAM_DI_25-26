@@ -14,3 +14,5 @@
 **24/10/2025** Añado un docker-compose para lanzar la base de datos sakila, necesaria para la tarea 1, sin instalar MySQL Workbench
 
 **27/10/2025** Añadido *ejemploClase5* que añade el filtrado, borrado y edición de elementos
+
+**10/11/2025** Añadido *ejemploClase6Componente* y *ejemploClase6Proyecto* que añaden un ejemplo sencillo de uso de componentes.
