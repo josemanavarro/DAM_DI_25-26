@@ -36,6 +36,7 @@ public class JFrameVentana extends javax.swing.JFrame implements Serializable{
         jTextFieldDividendo = new javax.swing.JTextField();
         jLabelResultado = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jPanelImagenTransparente2 = new di.dam.ejemploclase6componente3.JPanelImagenTransparente();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,29 +53,38 @@ public class JFrameVentana extends javax.swing.JFrame implements Serializable{
 
         jLabel1.setText("Calculadora que puede generar excepciones:");
 
+        jPanelImagenTransparente2.setImagenFondo(new di.dam.ejemploclase6componente3.ImagenFondo(new java.io.File("/home/jose/Escritorio/LogoInsti4.png"),0.5f));
+
+        javax.swing.GroupLayout jPanelImagenTransparente2Layout = new javax.swing.GroupLayout(jPanelImagenTransparente2);
+        jPanelImagenTransparente2.setLayout(jPanelImagenTransparente2Layout);
+        jPanelImagenTransparente2Layout.setHorizontalGroup(
+            jPanelImagenTransparente2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanelImagenTransparente2Layout.setVerticalGroup(
+            jPanelImagenTransparente2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextFieldDividendo, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextFieldDivisor)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabelResultado)
-                                    .addComponent(jLabel1))
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addComponent(jTextFieldDividendo, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jTextFieldDivisor)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButtonModificar)
                             .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jButtonModificar))
-                            .addComponent(ComponenteError, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 10, Short.MAX_VALUE)))
+                                .addComponent(jPanelImagenTransparente2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(837, 837, 837)
+                                .addComponent(ComponenteError, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabelResultado)
+                            .addComponent(jLabel1))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -91,8 +101,10 @@ public class JFrameVentana extends javax.swing.JFrame implements Serializable{
                 .addGap(18, 18, 18)
                 .addComponent(jLabelResultado)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ComponenteError, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ComponenteError, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelImagenTransparente2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(242, Short.MAX_VALUE))
         );
 
         pack();
@@ -120,6 +132,7 @@ public class JFrameVentana extends javax.swing.JFrame implements Serializable{
     private javax.swing.JButton jButtonModificar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelResultado;
+    private di.dam.ejemploclase6componente3.JPanelImagenTransparente jPanelImagenTransparente2;
     private javax.swing.JTextField jTextFieldDividendo;
     private javax.swing.JTextField jTextFieldDivisor;
     // End of variables declaration//GEN-END:variables
