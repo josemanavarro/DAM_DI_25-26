@@ -16,3 +16,5 @@
 **27/10/2025** Añadido *ejemploClase5* que añade el filtrado, borrado y edición de elementos
 
 **10/11/2025** Añadido *ejemploClase6Componente* y *ejemploClase6Proyecto* que añaden un ejemplo sencillo de uso de componentes.
+
+**26/01/2025** Subida de *ejemploClase7* que modifica el ejemplo 5 añadiendo un primer informe de JasperReports

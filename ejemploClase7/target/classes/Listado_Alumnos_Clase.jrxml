@@ -1,0 +1,171 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Listado_Alumnos_Clase" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7580ab02-9299-41e6-a225-c5b657108684">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<query language="SQL"><![CDATA[SELECT id, nombre, apellidos, ciclo, curso, fecha_alta as alta
+FROM `DI`.alumnos]]></query>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="ciclo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ciclo"/>
+		<property name="com.jaspersoft.studio.field.label" value="ciclo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="curso" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="curso"/>
+		<property name="com.jaspersoft.studio.field.label" value="curso"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="alta" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fecha_alta"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha_alta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="92" splitType="Stretch">
+		<element kind="image" uuid="b63c62df-6190-42a6-b3cb-3436cb65ae1d" x="0" y="0" width="549" height="79">
+			<expression><![CDATA["/home/jose/Descargas/LogoInsti4.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="f37c03c0-c0e0-4a9f-827a-bbca21ffbf7d" x="0" y="0" width="549" height="79" fontName="Arial" fontSize="22.0" bold="true" hTextAlign="Center" vTextAlign="Bottom">
+			<text><![CDATA[Listado de alumnos del curso 25/26]]></text>
+		</element>
+	</title>
+	<columnHeader height="20" splitType="Stretch">
+		<element kind="staticText" uuid="11bb586b-b0d4-483e-a92b-afff6e798f61" x="95" y="0" width="92" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[nombre]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec384afe-f423-4994-86a3-7926da30b0ae"/>
+			<box padding="1">
+				<pen lineWidth="1.0"/>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="856fa262-370a-4290-b88e-45f54b51ca1e" x="187" y="0" width="92" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[apellidos]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52e8dfe7-1a4b-453d-8c5a-4b48e5b9476e"/>
+			<box padding="1">
+				<pen lineWidth="1.0"/>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="6a119ac7-e599-4cb9-96e8-e7107118d636" x="279" y="0" width="92" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[ciclo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0d9a2d45-fad2-4f80-b6bd-5a2f992cd5db"/>
+			<box padding="1">
+				<pen lineWidth="1.0"/>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="81c42113-066f-46d5-ac63-894ad2bb0a0f" x="371" y="0" width="92" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[curso]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e1e1d985-3d0f-4ab6-b079-37e2cf6f82da"/>
+			<box padding="1">
+				<pen lineWidth="1.0"/>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="7b6526aa-d214-4219-bbaf-374ed24525af" x="463" y="0" width="92" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[fecha alta]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ce58eac3-3b2d-4e17-bb2e-07d31d747342"/>
+			<box padding="1">
+				<pen lineWidth="1.0"/>
+				<topPen lineWidth="1.0" lineStyle="Solid"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<element kind="textField" uuid="d70defe7-2b30-46b1-9c0b-4a7dfe0fc231" x="95" y="0" width="92" height="20">
+				<expression><![CDATA[$F{nombre}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec384afe-f423-4994-86a3-7926da30b0ae"/>
+				<box padding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="cf2f98d5-3ea9-4183-b6d7-afd5d6cf01d6" x="187" y="0" width="92" height="20">
+				<expression><![CDATA[$F{apellidos}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52e8dfe7-1a4b-453d-8c5a-4b48e5b9476e"/>
+				<box padding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="8c7621d6-41ec-495c-9526-39593634f252" x="279" y="0" width="92" height="20">
+				<expression><![CDATA[$F{ciclo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0d9a2d45-fad2-4f80-b6bd-5a2f992cd5db"/>
+				<box padding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="9630ff17-2f27-4cb6-87f1-a651ca1670d9" x="371" y="0" width="92" height="20">
+				<expression><![CDATA[$F{curso}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e1e1d985-3d0f-4ab6-b079-37e2cf6f82da"/>
+				<box padding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="063dc912-cc2d-4b0d-b212-460d64967daf" x="463" y="0" width="92" height="20">
+				<expression><![CDATA[$F{alta}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ce58eac3-3b2d-4e17-bb2e-07d31d747342"/>
+				<box padding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+			</element>
+		</band>
+	</detail>
+	<columnFooter splitType="Stretch"/>
+	<pageFooter height="21" splitType="Stretch">
+		<element kind="staticText" uuid="d8d1a138-8ddb-47dd-800b-add64dd5fc7a" x="-2" y="2" width="42" height="18">
+			<text><![CDATA[Página]]></text>
+		</element>
+		<element kind="textField" uuid="37bc2df0-8cb9-4910-ab69-0b0d388a9dc3" x="40" y="2" width="40" height="18">
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+</jasperReport>

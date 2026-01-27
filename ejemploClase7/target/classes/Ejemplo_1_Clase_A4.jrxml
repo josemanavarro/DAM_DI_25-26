@@ -1,0 +1,83 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Ejemplo_1_Clase_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="30438257-aa70-43ea-af03-577bdc50705c">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Pruebas DI"/>
+	<query language="SQL"><![CDATA[SELECT nombre,
+	id,
+	ciclo,
+	curso,
+	fecha_alta,
+	apellidos
+FROM `DI`.alumnos]]></query>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="ciclo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ciclo"/>
+		<property name="com.jaspersoft.studio.field.label" value="ciclo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="curso" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="curso"/>
+		<property name="com.jaspersoft.studio.field.label" value="curso"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="fecha_alta" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fecha_alta"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha_alta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="alumnos"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="32" splitType="Stretch">
+		<element kind="staticText" uuid="23ed3f8f-0071-4ab1-be8f-68f0842e4c12" x="-1" y="2" width="546" height="30" fontSize="22.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Listado de alumnos activos]]></text>
+		</element>
+	</title>
+	<columnHeader height="18" splitType="Stretch">
+		<element kind="staticText" uuid="e777b5f2-d5fb-41a2-bd48-79fbc8ce6b61" x="0" y="1" width="100" height="17" bold="true" hTextAlign="Center">
+			<text><![CDATA[ ID]]></text>
+		</element>
+		<element kind="staticText" uuid="8f6226ee-92be-41e5-bf83-9e8ac6a8e404" x="100" y="1" width="100" height="17" bold="true" hTextAlign="Center">
+			<text><![CDATA[Nombre]]></text>
+		</element>
+		<element kind="staticText" uuid="07dc76f4-f122-46a2-8b5d-827770d1ea4d" x="200" y="1" width="100" height="17" bold="true" hTextAlign="Center">
+			<text><![CDATA[Apellidos]]></text>
+		</element>
+		<element kind="staticText" uuid="fefb80a2-baa3-4010-9af8-bd78f85b1e50" x="300" y="1" width="100" height="17" bold="true" hTextAlign="Center">
+			<text><![CDATA[Ciclo]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<element kind="textField" uuid="ccd1316c-515c-4032-a992-50c4baca77d5" x="0" y="0" width="100" height="14">
+				<expression><![CDATA[$F{id}]]></expression>
+			</element>
+			<element kind="textField" uuid="d3c23e30-9ad7-4815-96ca-25a2717b8a1a" x="100" y="0" width="100" height="14">
+				<expression><![CDATA[$F{nombre}]]></expression>
+			</element>
+			<element kind="textField" uuid="e7759bba-706f-4692-8e09-61827a15ba47" x="200" y="0" width="100" height="14">
+				<expression><![CDATA[$F{apellidos}]]></expression>
+			</element>
+			<element kind="textField" uuid="398242c7-4b77-45d5-911c-535e88251ee8" x="300" y="0" width="100" height="14">
+				<expression><![CDATA[$F{ciclo}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<pageFooter height="23" splitType="Stretch">
+		<element kind="textField" uuid="429fe507-c7e2-4cf6-9dac-3b42ffba10b3" x="0" y="1" width="180" height="19">
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+</jasperReport>

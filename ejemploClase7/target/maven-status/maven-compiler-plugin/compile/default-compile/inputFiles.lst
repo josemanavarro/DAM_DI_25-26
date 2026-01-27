@@ -1,0 +1,10 @@
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/controlador/AlumnoControlador.java
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/controlador/Arranque.java
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/modelo/Alumno.java
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/modelo/AlumnoDAO.java
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/modelo/AlumnoDAOMySQL.java
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/modelo/AlumnoTableModel.java
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/modelo/ConexionDatos.java
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/vista/JDialogAlta.java
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/vista/JFramePrincipal.java
+/home/jose/NetBeansProjects/DAM_DI_25-26/ejemploClase7/src/main/java/di/dam/ejemploclase7/vista/informes/InformeAlumnos.java
