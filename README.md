@@ -17,4 +17,6 @@
 
 **10/11/2025** Añadido *ejemploClase6Componente* y *ejemploClase6Proyecto* que añaden un ejemplo sencillo de uso de componentes.
 
-**26/01/2025** Subida de *ejemploClase7* que modifica el ejemplo 5 añadiendo un primer informe de JasperReports
+**26/01/2026** Subida de *ejemploClase7* que modifica el ejemplo 5 añadiendo un primer informe de JasperReports
+
+**02/02/2026** Subida de *ejemploClase8* que genera un informe en código y lo exporta a un pdf dado en un cuadro de diálogo
