@@ -1,0 +1,7 @@
+# Created at 2026-04-13T20:11:39.311
+TestEngine with ID 'junit-jupiter' encountered a critical issue during test discovery:
+
+(1) [ERROR] @BeforeAll method 'void testUnitariosParametrizados.TestParametrizadosServicioCalculadora.setup()' must be static unless the test class is annotated with @TestInstance(Lifecycle.PER_CLASS).
+    Source: MethodSource [className = 'testUnitariosParametrizados.TestParametrizadosServicioCalculadora', methodName = 'setup', methodParameterTypes = '']
+            at testUnitariosParametrizados.TestParametrizadosServicioCalculadora.setup(SourceFile:0)
+
